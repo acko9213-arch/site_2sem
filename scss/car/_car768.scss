@@ -1,0 +1,31 @@
+@media(max-width:900px) {
+    main {
+        div.main {
+            div.car {
+                .carinfo {
+                    .price0 {
+                        font-size: 4vw;
+
+                        div.obprice {
+                            display: block;
+                            width: 100%;
+                        }
+
+                        .obkredit {
+                            button.kredit1 {
+                                font-size: 5vw;
+                                padding: 3vw 4vw;
+                            }
+                        }
+                    }
+
+                    div.specs {
+                        .spec {
+                            font-size: 4vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
