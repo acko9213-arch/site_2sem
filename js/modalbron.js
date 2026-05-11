@@ -27,7 +27,7 @@ if(!this.checkValidity())
     this.reportValidity();
     return;
 }
-
+this.reset();
 document.getElementById("modalwindow").style.display="none";
 document.getElementById("modalid1").style.display="block";
 

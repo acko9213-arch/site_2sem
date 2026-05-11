@@ -38,13 +38,15 @@ close3.onclick = function (e) {
   e.stopPropagation();
   modal1.style.display = "none";
 }
+const form = document.querySelector(".form23");
 
-open2.onclick = function (e) {
-  e.stopPropagation();
-  modal.style.display  = "none";
+form.onsubmit = function (e) {
+  e.preventDefault();
+
+  modal.style.display = "none";
   modal1.style.display = "block";
+  form.reset();
 }
-
 close1.onclick = function (e) {
   e.stopPropagation();
   modal1.style.display = "none";
