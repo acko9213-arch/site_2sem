@@ -31,12 +31,12 @@ open1.onclick = function (e) {
 
 close.onclick = function (e) {
   e.stopPropagation();
-  modal.style.display = "none";
+  closeModal();
 }
 
 close3.onclick = function (e) {
   e.stopPropagation();
-  modal1.style.display = "none";
+  closeModal1();
 }
 const form = document.querySelector(".form23");
 
@@ -49,10 +49,18 @@ form.onsubmit = function (e) {
 }
 close1.onclick = function (e) {
   e.stopPropagation();
-  modal1.style.display = "none";
+  closeModal1();
 }
 
 window.onclick = function (event) {
-  if (event.target == modal)  modal.style.display = "none";
-  if (event.target == modal1) modal1.style.display = "none";
+  if (event.target == modal)  closeModal();
+  if (event.target == modal1) closeModal1();
+}
+function closeModal() {
+  modal.style.display = "none";
+  document.querySelector(".form23").reset();
+}
+
+function closeModal1() {
+  modal1.style.display = "none";
 }

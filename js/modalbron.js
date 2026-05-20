@@ -3,16 +3,21 @@ document.addEventListener("click", function (e) {
 const modal = document.getElementById("modalwindow");
 const modal1 = document.getElementById("modalid1");
 
+function closeModalBron() {
+  modal.style.display = "none";
+  document.querySelector(".forma").reset();
+}
+
 if (e.target.closest(".kredit1")) {
     modal.style.display = "block";
 }
 
 if (e.target.closest(".krest")) {
-    modal.style.display = "none";
+    closeModalBron();
 }
 
 if (e.target === modal) {
-    modal.style.display = "none";
+    closeModalBron();
 }
 
 });
